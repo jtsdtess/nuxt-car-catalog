@@ -59,15 +59,15 @@ types/
 
 ```mermaid
 flowchart TD
-  A[Browser] --> B[Nuxt Pages]
-  B --> C[index.vue]
-  B --> D[car/[slug].vue]
-  C --> E[Pinia cars store]
+  A["Browser"] --> B["Nuxt Pages"]
+  B --> C["index.vue"]
+  B --> D["car/[slug].vue"]
+  C --> E["Pinia cars store"]
   D --> E
-  E --> F[/api/cars]
-  E --> G[/api/carquery/:make/:model/:year]
-  G --> H[CarQuery API]
-  E -.->|persist apiData| I[localStorage]
+  E --> F["/api/cars"]
+  E --> G["/api/carquery/:make/:model/:year"]
+  G --> H["CarQuery API"]
+  E -.->|persist apiData| I["localStorage"]
 ```
 
 ## Scripts
