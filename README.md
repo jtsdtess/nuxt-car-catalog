@@ -67,7 +67,7 @@ flowchart TD
   E --> F[/api/cars]
   E --> G[/api/carquery/:make/:model/:year]
   G --> H[CarQuery API]
-  E -.persist apiData.-> I[localStorage]
+  E -.->|persist apiData| I[localStorage]
 ```
 
 ## Scripts
@@ -82,14 +82,6 @@ npm run lint
 npm run lint:fix
 npm run format
 ```
-
-## Quality & Standards (2026-ready)
-
-- TypeScript `strict: true`.
-- SSR-safe client integrations (Fancybox подключается только на клиенте).
-- Явные loading/error/empty состояния в UI.
-- Компонентная SCSS-архитектура + БЭМ.
-- Accessibility-база: `aria-label`, `focus-visible`, клавиатурная навигация.
 
 ## Validation Before PR
 
