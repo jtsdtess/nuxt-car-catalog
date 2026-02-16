@@ -1,0 +1,26 @@
+@use 'tokens' as *;
+
+@mixin up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin page-container {
+  margin: 0 auto;
+  max-width: $container-max;
+  padding: 0 $space-4;
+
+  @include up($bp-sm) {
+    padding: 0 $space-6;
+  }
+
+  @include up($bp-lg) {
+    padding: 0 $space-8;
+  }
+}
+
+@mixin focus-ring($color: rgba($color-primary, 0.35)) {
+  outline: none;
+  box-shadow: 0 0 0 3px $color;
+}

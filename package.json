@@ -1,0 +1,35 @@
+{
+  "name": "car-catalog",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "build:ssr": "nuxt build",
+    "build:spa": "nuxt build --spa",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^6.1.10",
+    "@pinia/nuxt": "^0.11.3",
+    "nuxt": "^4.2.2",
+    "pinia": "^3.0.4",
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.7.4",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.97.3",
+    "typescript": "^5.7.2",
+    "vue-tsc": "^2.2.0"
+  }
+}
